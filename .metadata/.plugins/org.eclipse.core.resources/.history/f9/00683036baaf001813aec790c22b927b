@@ -1,0 +1,15 @@
+import org.junit.Test;
+import org.junit.Assert;
+
+
+public class FamilyTDD {
+	@Test
+	public void testFamily() {
+		Family person = new Family();
+		person.setParentName("Vera", "George");
+		Assert.assertEquals("George", person.getParentName());
+		Assert.assertEquals("Vera",person.getChildName());
+		
+	}
+
+}

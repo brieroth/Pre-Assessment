@@ -1,0 +1,11 @@
+
+public class AlphaString {
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	String sentence = "hello";
+	String str = sentence.replaceAll("[a-zA-Z]","1");
+	System.out.println(str);
+	
+	}
+
+}

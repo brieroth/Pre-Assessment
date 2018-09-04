@@ -1,0 +1,23 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class AlphaString {
+	
+	public static void main(String[] args)
+	{	
+	
+//		for(int i = 'a'; i <= 'z'; i++) {
+//		    System.out.println((char) i + " : " + (i - 'a' + 1));
+//		}
+	}
+
+	public Object AlphaString(String string) {
+		// TODO Auto-generated method stub
+		String sentence = "aaa";
+		String str = sentence.replaceAll("[a-zA-Z]","1");
+		System.out.println(str);
+		
+		return str;
+	}
+
+}

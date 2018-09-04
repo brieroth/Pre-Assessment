@@ -1,0 +1,25 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class AlphaString {
+
+	public Object AlphaString(String string) {
+		// TODO Auto-generated method stub
+//		String sentence = "hel";
+//		String str = sentence.replaceAll("[a-zA-Z]","1");
+//		System.out.println(str);
+//		
+//		return 111;
+	}
+		   public static void main(String[] args) {
+		        //char letter = 'T';
+		        String sentence = "hello";
+		        System.out.println(sentence); // returns 26
+		        }
+		 
+//		    private static int letterToAlphabetPos(String sentence) {
+//		        return Character.toUpperCase(sentence) - 64;
+//		    }
+	
+	}
+

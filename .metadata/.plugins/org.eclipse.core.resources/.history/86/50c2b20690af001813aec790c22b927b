@@ -1,0 +1,21 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class AlphaString {
+
+//public Object AlphaString(String string) {
+//}
+		   public static void main(String[] args) {
+		        String sent = "This NETbuilder assessment is way too easy.";
+		        String sentence = sent.trim();
+		        for(char ch : sentence.toCharArray()){
+		        	
+		        	System.out.println(letterToAlphabetPos(ch)); 
+		        }
+}
+		   private static int letterToAlphabetPos(char ch) {
+		     return Character.toUpperCase(ch) - 64;
+		    }
+	
+	}
+

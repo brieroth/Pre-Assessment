@@ -1,0 +1,19 @@
+
+public class AlphaString {
+
+//public Object AlphaString(String string) {
+//}
+		   public static void main(String[] args) {
+		        String text = "This NETbuilder assessment is way too easy.";
+		        String sentence = text.replaceAll("\\W+","");
+		        //non word character
+		        for(char ch : sentence.toCharArray()){
+		        	System.out.println(letterToNumber(ch)); 
+		        }
+}
+		   private static Object letterToNumber(char ch) {
+		     return Character.toUpperCase(ch) - 64;
+		    }
+	
+	}
+

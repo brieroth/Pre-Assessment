@@ -1,0 +1,10 @@
+public class Runner {
+
+	public static void main(String[] args) {
+ 
+		 Family derrick = new Family("Derrick","Mona");
+		 derrick.setGender(Gender.MALE);
+		 System.out.println("derrick's  gender is: " + derrick.getGender());
+	 }
+
+}

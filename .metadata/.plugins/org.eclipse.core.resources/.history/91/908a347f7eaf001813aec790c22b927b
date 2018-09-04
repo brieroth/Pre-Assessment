@@ -1,0 +1,9 @@
+
+public class AlphaString {
+
+	public Object AlphaString(String string) {
+		// TODO Auto-generated method stub
+		return "89";
+	}
+
+}

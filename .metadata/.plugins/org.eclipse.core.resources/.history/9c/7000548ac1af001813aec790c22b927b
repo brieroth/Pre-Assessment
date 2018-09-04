@@ -1,0 +1,11 @@
+import java.util.ArrayList;
+
+public class Runner {
+	 public void main(String[] args) {
+		 Family familyList = new Family();
+		 
+		 Family person = new Family("Derrick","Mona", false);
+		 familyList.addPerson(person);
+	 }
+
+}

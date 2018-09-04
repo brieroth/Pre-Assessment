@@ -1,0 +1,11 @@
+import java.util.ArrayList;
+
+public class Runner {
+	 public void main(String[] args) {
+ 
+		 Family derrick = new Family("Derrick","Mona");
+		 derrick.setGender(Gender.MALE);
+		 System.out.println("derrick's  gender is: " + derrick.getGender());
+	 }
+
+}

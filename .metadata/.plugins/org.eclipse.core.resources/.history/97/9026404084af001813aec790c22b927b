@@ -1,0 +1,15 @@
+
+public class AlphaString {
+	
+	public static void main (String[] args) 
+	{
+//	String sentence = "hello";
+//	String str = sentence.replaceAll("[a-zA-Z]","1");
+//	System.out.println(str);
+//	
+		for(int i = 'A'; i <= 'Z'; i++) {
+		    System.out.println((char) i + " : " + (i - 'A' + 1));
+		}
+	}
+
+}

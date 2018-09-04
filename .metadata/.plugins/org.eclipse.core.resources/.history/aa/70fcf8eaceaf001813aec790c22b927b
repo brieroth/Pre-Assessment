@@ -1,0 +1,51 @@
+
+public class Family {
+	private String childName;
+	private String name;
+	private String parentName;
+	private String parentNameB;
+	private Gender gender;
+		
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getChildName() {
+		return childName;
+	}
+	public void setChildName(String name) {
+		this.childName = name;
+	}
+	public String getParentName() {
+		return parentName;
+	}
+	public void setParentName(String childName , String parentName, Gender gender) {
+		this.parentName = parentName;
+	}
+	public String getParentNameB() {
+		return parentNameB;
+	}
+	public void setParentNameB(String childName , String parentNameB, Gender gender) {
+		this.parentNameB = parentNameB;
+	}
+	public Gender getGender() {
+		return gender;
+	}
+	public void setGender(Gender gender) {
+		this.gender = gender;
+	}
+
+	@Override
+	public String toString() {
+		return "Family [childName=" + childName + ", parentName=" + parentName + ", parentNameB=" + parentNameB
+				+ ", gender=" + gender + "]";
+	}
+
+	
+	
+	
+}
+	
+	

@@ -1,0 +1,54 @@
+import java.io.Serializable;
+
+public class Family {
+	 public static Gender MALE = Gender.MALE; 
+	 public static Gender FEMALE = Gender.FEMALE; 
+	 public enum Gender { FEMALE, MALE, UNKNOWN }; 
+
+	private String childName;
+	private String parentName;
+	private boolean isMale;
+	private boolean isFemale;
+	private Gender gender; 
+		
+//public Family(){
+//	this.childName = childName;
+//	this.parentName = parentName;			 
+//}
+
+public String getChildName() {
+	return childName;
+}
+
+public void setChildName(String childName) {
+	this.childName = childName;
+}
+
+public String getParentName() {
+	return parentName;
+}
+
+public void setParentName(String childName, String parentName) {
+	this.parentName = parentName;
+	this.childName = childName;
+}
+
+public boolean isMale(String childName, boolean b) {
+	return isMale;
+}
+
+public void setMale(boolean isMale) {
+	this.isMale = isMale;
+}
+
+public boolean isFemale() {
+	return isFemale;
+}
+
+public void setFemale(boolean isFemale) {
+	this.isFemale = isFemale;
+}
+
+
+
+}

@@ -1,0 +1,4 @@
+
+public enum GenderSelection {
+	FEMALE, MALE, UNKNOWN 
+}

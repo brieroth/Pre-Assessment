@@ -1,0 +1,47 @@
+import java.io.Serializable;
+import java.util.ArrayList;
+
+public class Family {
+	//private ArrayList<Family> familyList = new ArrayList<Family>();
+	private String childName;
+	private String parentName;
+	private boolean isMale;
+	
+public Family(String childName, String parentName, boolean isMale) {
+		this.childName = childName;
+		this.parentName = parentName;
+		this.isMale = isMale;
+	}
+
+public String getChildName(boolean isMale) {
+	return childName;
+}
+
+public void setChildName(String childName, boolean isMale) {
+	this.childName = childName;
+}
+
+public String getParentName(boolean b) {
+	return parentName;
+}
+
+public void setParentName(String childName, String parentName, boolean b) {
+	this.parentName = parentName;
+	this.childName = childName;
+}
+//public void addPerson(Family family) {
+//    familyList.add(family);
+//
+//}
+
+@Override
+public String toString() {
+	String gender = "male";
+	if (!isMale) {
+        gender = "female";
+}
+	return "Family [childName=" + childName + ", parentName=" + parentName + ", isMale=" + gender + "]";
+	
+}
+
+}

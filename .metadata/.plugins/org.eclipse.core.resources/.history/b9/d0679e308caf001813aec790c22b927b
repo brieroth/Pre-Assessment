@@ -1,0 +1,14 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class AlphaString {
+
+	public void  AlphaString(String sentence) {
+	String str = sentence.replaceAll("[a-zA-Z]","1");
+	System.out.println(str);	
+	return;
+		
+	}
+}
+		   
+

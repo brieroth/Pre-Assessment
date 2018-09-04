@@ -1,0 +1,13 @@
+public class Runner {
+
+	public static void main(String[] args) {
+ 		 Family p1 = new Family();
+		 p1.setParentName("Vera", "George", Gender.MALE);
+		 p1.setParentName("Vera", "Vanessa", Gender.FEMALE);
+		 p1.getChildName();
+		
+		
+		
+	 }
+
+}

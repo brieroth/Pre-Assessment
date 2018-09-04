@@ -1,0 +1,15 @@
+
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+
+public class AlphaReplacementTDD {
+	
+	AlphaString sentence = new AlphaString();
+	
+	@Test
+	public void testAlphaPos() {
+	assertEquals(111, sentence.AlphaString("aaa"));
+	}
+
+}

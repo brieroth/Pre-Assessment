@@ -1,0 +1,28 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class AlphaString {
+
+	public Object AlphaString(String string) {
+		// TODO Auto-generated method stub
+//		String sentence = "hel";
+//		String str = sentence.replaceAll("[a-zA-Z]","1");
+//		System.out.println(str);
+//		
+//		return 111;
+	}
+		   public static void main(String[] args) {
+		        //char letter = 'T';
+		        String sentence = "hello";
+		        for(char ch : sentence.toCharArray()){
+		        	System.out.println(letterToAlphabetPos(ch)); // returns 26
+		        }
+		        
+		        }
+		
+		    private static int letterToAlphabetPos(char ch) {
+		        return Character.toUpperCase(ch - 64);
+		    }
+	
+	}
+

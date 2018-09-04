@@ -1,0 +1,71 @@
+import java.io.Serializable;
+import java.util.ArrayList;
+
+public class Family {
+	private String childName;
+	private String parentName;
+	private String parentNameB;
+	private Gender gender;
+	private boolean isMale;
+	private String children;
+	private String parents;
+	
+	
+//	public Family() {
+//		this.childName = childName;
+//		this.parentName = parentName;
+//	}
+	public String getChildName() {
+		return childName;
+	}
+	public void setChildName(String childName) {
+		this.childName = childName;
+	}
+	public String getParentName() {
+		return parentName;
+	}
+	public void setParentName(String childName , String parentName, Gender gender) {
+		this.parentName = parentName;
+	}
+	public String getParentNameB() {
+		return parentNameB;
+	}
+	public void setParentNameB(String childName , String parentNameB, Gender gender) {
+		this.parentNameB = parentNameB;
+	}
+	public Gender getGender() {
+		return gender;
+	}
+	public void setGender(Gender gender) {
+		this.gender = gender;
+	}
+	public boolean isMale() {
+		return isMale;
+	}
+	public void setMale(boolean isMale) {
+		this.isMale = isMale;
+	}
+	public String getChildren() {
+		return children;
+	}
+	public void setChildren(String children) {
+		this.children = children;
+	}
+	public String getParents() {
+		return parents;
+	}
+	public void setParents(String parents) {
+		this.parents = parents;
+	}
+	@Override
+	public String toString() {
+		return "Family [childName=" + childName + ", parentName=" + parentName + ", parentNameB=" + parentNameB
+				+ ", gender=" + gender + ", isMale=" + isMale + ", children=" + children + ", parents=" + parents + "]";
+	}
+
+	
+	
+	
+}
+	
+	
