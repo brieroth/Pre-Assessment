@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="FamilyTDD" project="FamilyTree" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="FamilyTDD" time="0.0">
+    <testcase name="testParents" classname="FamilyTDD" time="0.0"/>
+    <testcase name="testGender" classname="FamilyTDD" time="0.0"/>
+  </testsuite>
+</testrun>

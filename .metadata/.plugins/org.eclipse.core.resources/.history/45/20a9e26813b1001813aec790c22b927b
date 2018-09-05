@@ -1,0 +1,88 @@
+import java.util.ArrayList;
+
+public class Person {
+	private String name;
+	private Gender gender;
+	private String parentA;
+	private String parentB;
+	private String child;
+	private ArrayList<Person> parents;
+	private ArrayList<Person> children;
+
+	public Person(String name, Gender gender)
+	{
+		this.name = name;
+		this.gender = gender;
+		parents = new ArrayList<Person>();
+		children = new ArrayList<Person>();  
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public boolean nameExists(String name) {
+		for (Person person : children) {
+			if (name.equals(person.getChildren())){
+				return true;
+			}
+		}
+		return false;
+	}
+
+	public Gender getGender() {
+		return gender;
+	}
+
+	public void setGender(String parentA,Gender gender) {
+		this.gender = gender;
+	}
+
+	//
+	public void addParents(Person parents) {
+		this.parents.add(parentA);
+		this.parents.add(parentB);
+
+	}
+	public String getParentA(String parentA) {
+		return parentA;
+	}
+	public void setParentA(String name, String parentA) {
+		this.parentA = parentA;
+	}
+
+	public String getParentB() {
+		return parentB;
+	}
+
+	public void setParentB(String parentB) {
+		this.parentB = parentB;
+	}
+
+	public ArrayList<Person> getParents() {
+		return parents;
+	}
+
+	//
+	public void addChild(String child) {
+		this.children.add(child);
+	}
+
+	public ArrayList<Person> getChildren() {
+		return children;
+	}
+
+	public String getChild() {
+		return child;
+	}
+
+	public void setChild(String child) {
+		this.child = child;
+	}
+
+
+}

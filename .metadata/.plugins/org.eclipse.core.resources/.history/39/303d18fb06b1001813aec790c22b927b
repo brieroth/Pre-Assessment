@@ -1,0 +1,75 @@
+import java.util.ArrayList;
+
+public class Person {
+	private String name;
+	private Gender gender;
+	private Person parentA;
+	private Person parentB;
+	private Person child;
+	private ArrayList<Person> parents;
+    private ArrayList<Person> children;
+	
+	 public Person(String name)
+		     {
+	         this.name = name;
+//	         this.gender = gender;
+//	         this.parentA = parentA;
+//	         this.parentB = parentB; 
+//	         this.child = child;
+	         parents = new ArrayList<Person>();
+	         children = new ArrayList<Person>();
+	         
+	     }
+
+		public String getName() {
+			return name;
+		}
+
+		public void setName(String name) {
+			this.name = name;
+		}
+
+		public Gender getGender() {
+			return gender;
+		}
+
+		public void setGender(Gender gender) {
+			this.gender = gender;
+		}
+		
+		//
+		public void addParents(Person parents) {
+			this.parents.add(parentA);
+			this.parents.add(parentB);
+			
+		}
+		public Person getParentA() {
+			return parentA;
+		}
+		public void setParentA(Person parentA) {
+			this.parentA = parentA;
+		}
+
+		public Person getParentB() {
+			return parentB;
+		}
+
+			public void setParentB(Person parentB) {
+			this.parentB = parentB;
+		}
+
+		public ArrayList<Person> getParents() {
+			return parents;
+		}
+		
+		//
+		public void addChild(Person child) {
+			this.children.add(child);
+			}
+
+		public ArrayList<Person> getChildren() {
+			return children;
+		}
+
+
+}

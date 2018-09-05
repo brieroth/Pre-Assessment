@@ -1,0 +1,34 @@
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Assert;
+import org.junit.Before;
+
+
+public class FamilyTDD {
+Person person;
+
+	@Before
+	public void setUp() {
+	person = new Person("male");
+	}
+	
+	@Test
+	public void testGender() {
+		assertTrue(person.isFemale("Vera"));
+		assertTrue(person.isMale("George"));
+	}
+
+	@Test
+	public void testParents() {
+		person.setParentA(person);
+	}
+
+//	@Test 
+//	public void testChildren() {
+//		
+//	}
+}
+

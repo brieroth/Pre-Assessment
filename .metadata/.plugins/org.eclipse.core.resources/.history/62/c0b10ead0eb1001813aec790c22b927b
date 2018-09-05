@@ -1,0 +1,46 @@
+import java.util.*;
+class Family {
+	
+	private static Map<String, Person> family;
+	private String name;
+	public boolean male;
+	public boolean isMale;
+	public boolean female;
+	public boolean isFemale;
+	private Gender gender;
+	
+    public Family() {
+        family = new HashMap<>();
+    }
+    
+    private static boolean addName(String name,  Gender gender) {
+    	family.putAll(family);
+		return addName(name, Gender.UNKNOWN);
+	}         
+    
+    public static boolean male(String name) {
+    	addName(name, Gender.MALE);
+    	return true;
+    }
+	public boolean female(String name) {
+    	addName(name, Gender.FEMALE);
+    	return true;
+    }
+	public boolean isFemale(String name) {
+    	addName(name, Gender.FEMALE);
+    	return true;
+    }
+	public boolean isMale(String name) {
+    	addName(name, Gender.MALE);
+    	return true;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}

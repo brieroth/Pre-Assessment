@@ -1,0 +1,115 @@
+package Family;
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class Person {
+	private String name;
+	private Gender gender;
+	private Person parentA;
+	private Person parentB;
+	public boolean male;
+	public boolean female;
+	private ArrayList<Person> parents = new ArrayList<Person>();
+	private static ArrayList<Person> children = new ArrayList<Person>();
+   
+	public Person(String gender)
+	{
+		if (gender == "male") {
+			this.gender = Gender.MALE;
+		}
+		else if (gender == "female") {
+		this.gender = Gender.FEMALE;
+		}
+		else {
+		this.gender = Gender.UNKNOWN;
+	}
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public boolean nameExists(String name) {
+		for (Person person : children) {
+			if (name.equals(person.getChildren())){
+				return true;
+			}
+		}
+		return false;
+	}
+
+	public boolean isMale(String name) {
+		if (gender == Gender.MALE) {
+			return true;
+		}
+		return false;
+	}
+
+	public boolean isFemale(String name) {
+		if (gender == Gender.FEMALE) {
+			return true;
+		}
+		return false;
+
+	}
+	 public boolean male(String name) {
+	    	return true;
+	    }
+	 public boolean female(String name) {
+	    	return true;
+	    } 
+	//
+	public void addParents(Person parents) {
+		this.parents.add(parentA);
+		this.parents.add(parentB);
+
+	}
+	public Person getParentA() {
+		return parentA;
+	}
+	public void setParentA(Person parent) {
+		if (parent.isMale(name)) {
+		this.parentA = parent;
+		parent.addChild(this);
+	}
+	}
+	public Person getParentB() {
+		return parentB;
+	}
+
+	public void setParentB(Person parent) {
+		if (parent.isFemale(name)) {
+			this.parentB = parent;
+			parent.addChild(this);
+		}
+	}
+
+	public ArrayList<Person> getParents() {
+		return parents;
+	}
+
+	//
+	public void addChild(Person child) {
+		this.children.add(child);
+		if (isMale(name)) {
+			child.setParentA(child);
+		}
+		else if (isFemale(name)) {
+			child.setParentB(child);
+		}
+	}
+
+	public ArrayList<Person> getChildren() {
+		return children;
+	}
+
+	public Person getChild(int a) {
+		return children.get(a);
+	}
+
+
+}

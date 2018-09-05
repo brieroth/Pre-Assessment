@@ -1,0 +1,67 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map; 
+
+public class Family {
+	private String name;
+	public boolean male;
+	public boolean isMale;
+	public boolean female;
+	public boolean isFemale;
+	private String childName;
+	private String parentName;
+	private Gender gender;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public boolean isMale() {
+		return male;
+	}
+	public void setMale(boolean male) {
+		this.male = male;
+	}
+	public boolean isMale() {
+		return isMale;
+	}
+	public void setMale(boolean isMale) {
+		this.isMale = isMale;
+	}
+	public boolean isFemale() {
+		return female;
+	}
+	public void setFemale(boolean female) {
+		this.female = female;
+	}
+	public boolean isFemale() {
+		return isFemale;
+	}
+	public void setFemale(boolean isFemale) {
+		this.isFemale = isFemale;
+	}
+	public String getChildName() {
+		return childName;
+	}
+	public void setChildName(String childName) {
+		this.childName = childName;
+	}
+	public String getParentName() {
+		return parentName;
+	}
+	public void setParentName(String parentName) {
+		this.parentName = parentName;
+	}
+	public Gender getGender() {
+		return gender;
+	}
+	public void setGender(Gender gender) {
+		this.gender = gender;
+	}
+
+	
+	
+}
+	
+	

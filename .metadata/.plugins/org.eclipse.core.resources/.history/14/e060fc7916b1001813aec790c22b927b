@@ -1,0 +1,15 @@
+public class Runner {
+
+	public static void main(String[] args) {
+ 		 Person p1 = new Person("Dean",Gender.MALE);
+ 		 p1.setParentA(parentA);
+ 		 //p1.setParentName("Vera", "George", Gender.MALE);
+		 //p1.setParentNameB("Vera", "Vanessa", Gender.FEMALE);
+		 System.out.println(p1);
+		 System.out.println(p1.getParentNameB());
+		
+		
+		
+	 }
+
+}

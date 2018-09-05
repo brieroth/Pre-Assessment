@@ -1,0 +1,13 @@
+import org.junit.Test;
+import org.junit.Assert;
+
+public class AlphaReplacementTDD {
+	
+	@Test
+	public void testAlphaPos() {
+	AlphaString sentence = new AlphaString();
+	String text = "aaa";
+	Assert.assertEquals(111, sentence.letterToNumber(text));
+	}
+
+}
