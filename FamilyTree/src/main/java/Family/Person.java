@@ -1,114 +1,59 @@
 package Family;
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class Person {
 	private String name;
-	private String childName;
 	private Gender gender;
-//	private Person parent;
-	private String parentName;
-//	private Person parentB;
-	public boolean male;
-	public boolean female;
-	private ArrayList<String> maleNames = new ArrayList<>();
-	private ArrayList<String> femaleNames = new ArrayList<>();
-	
 	private ArrayList<Person> parents = new ArrayList<Person>();
 	private static ArrayList<Person> children = new ArrayList<Person>();
    
-	public Person(String name, String gender)
+	public Person(String name)
 	{
-		if (gender == "male") {
-			this.gender = Gender.MALE;
-		}
-		else if (gender == "female") {
-		this.gender = Gender.FEMALE;
-		}
-		else {
-		this.gender = Gender.UNKNOWN;
-	}
+		this.name = name;
 	}
 
 	public String getName() {
 		return name;
 	}
-	
+
 	public void setName(String name) {
 		this.name = name;
 	}
 
-	public boolean nameExists(String name) {
-		for (Person person : children) {
-			if (name.equals(person.getChildren(name))){
-				return true;
-			}
-		}
-		return false;
+	public Gender getGender() {
+		return gender;
 	}
 
-	public boolean isMale(String name) {
-		if (gender == Gender.MALE) {
-			return true;
-		}
-		return false;
+	public void setGender(Gender gender) {
+		this.gender = gender;
 	}
 
-	public boolean isFemale(String name) {
-		if (gender == Gender.FEMALE) {
-			return true;
-		}
-		return false;
-
+	public void addParent(Person parent) {
+		this.parents.add(parent);
 	}
-	 public boolean male(String name) {
-	    	return true;
-	    }
-	 public boolean female(String name) {
-		 	return true;
-	    } 
-	//
-	 
-//	public void addChild(String name, Gender gender) {
-//		Person newChild = new Person(name, gender);
-//		family.put(newChild);
-//		
-//	}
-	public boolean setParent(String childName, String parentName) {
-		boolean pIsMale = isMale(parentName);
-		boolean pIsFemale = isFemale(parentName);
-		
-		if (pIsMale == true) {
-		childName.add
-		//parent.addChild(this);
+	public ArrayList<Person> getParents() {
+		return parents;
 	}
+
+	public void setParents(ArrayList<Person> parents) {
+		this.parents = parents;
 	}
-	public String[] getParent(String name) {
-			return family.get(name).getParent();
-		}
-}
-public void addParents(Person parents) {
-	this.parents.add(parent);
-}
-public Person getParent() {
-	return parent;
-}
-public void setParent(String name, Person parent) {
-	if (parent.isMale(name)) {
-	this.parent = parent;
-	//parent.addChild(this);
-}
-}
-public ArrayList<Person> getParents(String name) {
-	return parents;
-}
 
-public ArrayList<Person> getChildren(String name) {
-	return children;
-}
+	public void addChild(Person child) {
+		this.children.add(child);
+	}
+	public ArrayList<Person> getChildren() {
+		return children;
+	}
 
-public Person getChild(int a) {
-	return children.get(a);
-}
-
-}
+	public static void setChildren(ArrayList<Person> children) {
+		Person.children = children;
+	}
+	
+	
+	
+	
+	
+	
+	
+	}
